@@ -1,0 +1,107 @@
+/* styles2.css */
+body {
+    background-color: black;
+    background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm463-bg-023-x.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=2f8872154a87b6bcd46ee97f3c11bba7');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Courier New', sans-serif;
+    color: yellow;
+}
+
+header {
+    background-color: transparent;
+    color: yellow;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+    flex-direction: column;
+}
+
+nav a {
+    color: yellow;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    background-color: rgba(50, 50, 50, 0.6);
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(70, 70, 70, 0.8);
+}
+a {
+    color: #4a90e2; /* Lighter blue color */
+}
+
+a:hover {
+    color: #357ab7; /* Slightly darker blue on hover */
+}
+
+.options-button {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(50, 50, 50, 0.6);
+    color: yellow;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.options-menu {
+    display: none;
+    position: absolute;
+    bottom: 100%;  /* Position it right above the "Options" button */
+    left: 0;
+    flex-direction: column-reverse;  /* Stack items vertically */
+    gap: 10px;  /* Space between items */
+}
+
+.content {
+    max-width: 60%; /* reduced width */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(50, 50, 50, 0.6);
+    color: yellow; /* color for the text */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.content img {
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+body.style-two-active nav {
+    display: none; /* Keep nav hidden by default when styles2 is active */
+}
+
+.style-two-active .options-button:hover + nav {
+    display: block;
+}
+
+/* Toggle Button */
+.toggle-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(50, 50, 50, 0.7);
+    color: yellow;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
