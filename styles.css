@@ -18,7 +18,7 @@ header {
 }
 
 nav {
-    display: flex !important; /* Ensures the nav bar is always displayed in this style */
+    display: flex !important; 
     justify-content: center;
     background-color: #444;
     padding: 10px 0;
@@ -42,24 +42,33 @@ nav a:hover {
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content img {
-    width: 150px;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    width: 100%;  /* Full width of the white content area */
+    height: auto;  /* Adjust height automatically */
+    margin-bottom: 20px; /* Add some space below the image */
 }
 
 h2 {
     margin-top: 0;
 }
 
-/* Hide the options button in this style */
+
 .options-button, .options-menu {
     display: none !important;
 }
-
+img.headshot {
+    display: block;
+    margin: 10px auto;
+    width: 150px;  
+    height: auto;
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
 /* Toggle Button */
 .toggle-button {
     background-color: #444;
@@ -71,4 +80,3 @@ h2 {
     top: 10px;
     right: 10px;
 }
-

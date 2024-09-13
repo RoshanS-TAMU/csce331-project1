@@ -39,8 +39,9 @@ nav a {
 nav a:hover {
     background-color: rgba(70, 70, 70, 0.8);
 }
+
 a {
-    color: #4a90e2; /* Lighter blue color */
+    color: #4a90e2; 
 }
 
 a:hover {
@@ -60,14 +61,14 @@ a:hover {
 .options-menu {
     display: none;
     position: absolute;
-    bottom: 100%;  /* Position it right above the "Options" button */
+    bottom: 100%;  
     left: 0;
-    flex-direction: column-reverse;  /* Stack items vertically */
-    gap: 10px;  /* Space between items */
+    flex-direction: column-reverse;  
+    gap: 10px; 
 }
 
 .content {
-    max-width: 60%; /* reduced width */
+    max-width: 60%;
     margin: 50px auto;
     padding: 20px;
     background-color: rgba(50, 50, 50, 0.6);
@@ -76,10 +77,9 @@ a:hover {
 }
 
 .content img {
-    width: 150px;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    width: 100%;  
+    height: auto; 
+    margin-bottom: 20px; 
 }
 
 h2 {
@@ -87,11 +87,30 @@ h2 {
 }
 
 body.style-two-active nav {
-    display: none; /* Keep nav hidden by default when styles2 is active */
+    display: none;
 }
 
 .style-two-active .options-button:hover + nav {
     display: block;
+}
+
+/* Headshot Image */
+img.headshot {
+    display: block;
+    margin: 10px auto;
+    width: 150px;  
+    height: auto;
+    border-radius: 50%;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.content img.resume {
+    display: block;
+    margin: 10px auto;
+    width: 60%;  
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  
 }
 
 /* Toggle Button */
